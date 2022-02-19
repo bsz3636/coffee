@@ -1,70 +1,98 @@
 .header-img {
-    position: relative;
-  }
+  position: relative;
+}
   
-  .image {
-    max-height: 100vh;
-    width: 100%;
-    filter: brightness(35%);
-  }
+.image {
+  max-height: 100vh;
+  width: 100%;
+  filter: brightness(35%);
+}
   
-  .header-text {
-    position: absolute;
-    top: 3%;
-    left: 15%;
-    font-weight: $font-weight-black;
-    color: $color-light;
-    text-transform: uppercase;
-    z-index: 5;
-  }
+.header-text {
+  position: absolute;
+  top: 3%;
+  left: 15%;
+  font-weight: $font-weight-black;
+  color: $color-light;
+  text-transform: uppercase;
+  z-index: 5;
+}
   
-  h1 {
-    font-size: 30px;
-    word-spacing: 5px;
-    letter-spacing: 7px;
-  }
+h1 {
+  font-size: 30px;
+  word-spacing: 5px;
+  letter-spacing: 7px;
+}
   
-  p {
-    letter-spacing: 3px;
-    margin-top: -20px;
-  }
+p {
+  letter-spacing: 3px;
+  margin-top: -20px;
+}
   
-  .nav-ul {
-    position: absolute;
-    top: 5%;
-    right: 15%;
+.nav-ul {
+  position: absolute;
+  top: 5%;
+  right: 15%;
     
-    li {
-      display: inline-block;
-    }
+  li {
+    display: inline-block;
+  }
   
-    a{
-      filter: brightness(60%);
-      font-size: 18px;
-      font-weight: $font-weight-semi-bold;
-      margin-left: 30px;
+  a{
+    filter: brightness(60%);
+    font-size: 18px;
+    font-weight: $font-weight-semi-bold;
+    margin-left: 30px;
       
-      &:hover {
-        filter: brightness(100%);
-      }
+    &:hover {
+      filter: brightness(100%);
     }
   }
+}
+
+.banner {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  right: 15%;
   
-  .box-btn {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    color: $color-light;
-  }
   
-  .box-btn h2 {
-    transform: translate(-50%,-50%);
-    font-weight: $font-weight-regular;
-    font-size: 25px;
-    color: $color-light;
-  }
+}
+
+.banner-text {
+  font-size: 85px;
+  text-align: right;
+  margin: 0;
+
+}
+.banner-text:first-child {
+  text-align: left;
+}
+.baner-line {
+  position: absolute;
+  left: 50%;
+  margin-top: 5%;
+  transform: translateX(-50%);
+  width: 25%;
+  border-bottom: 5px solid $color-gold;
+  text-align: center;
+}
   
-  .box-btn i {
-    font-size: 33px;
-    transform: translate(-50%,-50%);
-  }
+.box-btn {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  color: $color-light;
+}
+  
+.box-btn h2 {
+  transform: translate(-50%,-50%);
+  font-weight: $font-weight-regular;
+  font-size: 25px;
+  color: $color-light;
+}
+  
+.box-btn i {
+  font-size: 33px;
+  transform: translate(-50%,-50%);
+}

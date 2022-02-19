@@ -1,0 +1,71 @@
+.article-contact {
+  position: relative;
+  
+}
+
+.title-contact {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46%;
+  border-bottom: 5px solid $color-gold;
+  text-align: center;
+  height:110px; 
+}
+
+.form {
+  padding-top: 15%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color-dark;
+  font-size: 25px;
+  font-weight: $font-weight-bold;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+} 
+    
+
+.field-message {
+  margin: 15px;
+}
+
+input {
+  border: 3px solid $color-dark;
+  width: 500px;
+  height: 56px;
+}
+
+textarea {
+  border: 3px solid $color-dark;
+  clear: left;
+  width: 500px;
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: $color-gold;
+  color: $color-light;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+  width: 210px;
+  height: 70px;
+  margin: 40px 0;
+}
+      
+.submit-btn:hover {
+  transition-duration: 3s;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  z-index: 0;
+}

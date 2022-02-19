@@ -1,0 +1,36 @@
+.products-wrapper {
+  position: relative;
+}
+
+.title-products {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  border-bottom: 5px solid $color-gold;
+  text-align: center;
+}
+
+.title-products h2 {
+  margin-bottom: 2%;
+}
+
+.products-widget {
+  margin-top: 18%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.box {
+  
+  padding: 10% 10%;
+  background-color: pink;
+  width: 35%;
+  margin-top: 5%;
+}
+
+.box img {
+  object-fit: cover;
+}

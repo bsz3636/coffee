@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/335a4ac62a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -24,14 +25,155 @@
 				<li><a href="#products">products</a></li>
 				<li><a href="#contact">contact</a></li>
 			</ul>
+      <div class="banner">
+        <h2 class="banner-text one">Home of</h2><h2 class="banner-text two">Original Tastes</h2>
+        <div class="baner-line"></div>
+      </div>
+
 			<div class="box-btn">
-                <h2>discover</h2>
-                <a href="#">
-				    <i class="far fa-arrow-alt-circle-down"></i>
-                </a>
+        <h2>discover</h2>
+        <!--<a href="#products"><i class="far fa-arrow-alt-circle-down"></i></a>-->
 			</div>
 		</div>
 	</header>
+  <article class="products-wrapper page home-wrapper active" id="article-product">
+    <div class="title-products" id="products">
+      <h2>products</h2>
+    </div>
+    <script id="template-products-widget" type="text/x-handlebars-template">
+      <div class="products-widget container">
+        <div class="skill-right">
+          <div class="skill-image">
+              {{{ image }}}
+          </div>
+          <div class="skill-description">
+            <h3 class="name">{{{ id }}} {{{ title }}}</h3>
+            <div class="row description">
+              <p class="border-top col-2"></p>
+              <span class="col-8">{{{ description }}}</span>
+            </div>
+            <div class="row">
+              <div class="col-sm-5 specification">
+                <p>roasting: <span>{{{ roasting }}}</span></p>
+                <p>intensity: <span>{{{ intensity }}}</span></p>
+              </div>
+              <div class="col-sm-5 badge">
+                {{{ most-popular }}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+  </article>
+        
+        
+        <!--<div class="row box">
+          <h3 class="col-12">01. la lagartija</h3>
+          <div class="line col-3 "></div>
+          <div class="description col-9">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque vero culpa non et. Nulla, placeat voluptatum. Animi.</p>
+          </div>
+          <div class="specification col-6">
+            <p>Lorem, ipsum.</p><br>
+            <p>Lorem, ipsum.</p>
+          </div>
+          <div class="most-popular col-6"></div>
+        </div>
+        <div class="box">
+          <img src="images/coffee-1.png" alt="1">
+        </div>
+        <div class="box">
+          <img src="images/coffee-2.png" alt="1">
+        </div>
+        <div class="row box">
+          <h3 class="col-12">01. la lagartija</h3>
+          <div class="line col-3 "></div>
+          <div class="description col-9">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque vero culpa non et. Nulla, placeat voluptatum. Animi.</p>
+          </div>
+          <div class="specification col-6">
+            <p>Lorem, ipsum.</p><br>
+            <p>Lorem, ipsum.</p>
+          </div>
+          <div class="most-popular col-6"></div>
+        </div>
+        <div class="row box">
+          <h3>01. la lagartija</h3>
+          <div class="line col-3 "></div>
+          <div class="description col-9">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque vero culpa non et. Nulla, placeat voluptatum. Animi.</p>
+          </div>
+          <div class="specification col-6">
+            <p>Lorem, ipsum.</p><br>
+            <p>Lorem, ipsum.</p>
+          </div>
+          <div class="most-popular col-6"></div>
+        </div>
+        <div class="box">
+          <img src="images/coffee-3.png" alt="1">
+        </div>
+      </div>
+    </script>
+  </article>-->
+  <article class="about-wrapper active" id="article-about">
+    <div class="home-widget">
+      <div class="bgd"></div>
+      <div class="title-about"><h2>about us</h2></div>
+      <div class="carousel" data-flickity='{ "autoPlay": "3500", "contain": true, "prevNextButtons": false, "wrapAround": true, "cellAlign": "left", "pageDots": false }'>
+        <div class="carousel-cell">
+          <div class="carousel-img"><img src="images/3.png" alt="Elizabeth Doherty"></div>
+          <div class="text-box">
+            <h3 class= "name-carousel">Elizabeth Doherty</h3>
+					  <p class="description">Experienced barista from Bahamas. She says that Venezuela has opened her eyes on coffee. "It`s not about the taste", she says. "It`s all about the feelings" </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-img"><img src="images/2.png" alt="Max Selfish"></div>
+          <div class="text-box">
+            <h3 class= "name-carousel">Max Selfish</h3>
+					  <p class="description">Max is the austrian barista with years of experience from the hotels across the whole Europe. "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!", he says.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-img"><img src="images/1.png" alt="Ping Nihao"></div>
+          <div class="text-box">
+            <h3 class= "name-carousel">Ping Nihao</h3>
+					  <p class="description">Ping is the youngest in the team. He doesn`t like calling coffee a mysterious act. He says, a good coffee is like a mathematical formula. Once you figured it out, every coffee you make is a masterpiece. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="article-contact page" id="article-contact">
+    <div class="contact-widget">
+      <div class="title-contact" id="formula">
+        <h2>contact us</h2>
+      </div>
+      <form class="form" action="mailto:example@outmail.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="filed-name">name</label><br>
+          <input type="text" name="name" required id="filed-name">
+        </div>
+        <div class="form-row">
+          <label for="filed-name">title</label><br>
+          <input type="text" name="title" required id="filed-title">
+        </div>
+        <div class="form-row">
+          <label for="field-message" class="field-message">message</label>
+          <textarea name="message" required id="field-message"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="submit-btn">submit</button>
+        </div>
+      </form>
+    </div>
+  </article>
+  <footer>
+    <p> &copy; 2022 El TIGRE inc </p>
+  </footer>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
  	<!--<script src="js/app.js" type="module"></script>-->
 </body>
