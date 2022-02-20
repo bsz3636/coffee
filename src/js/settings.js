@@ -1,27 +1,26 @@
 export const select = {
   templateOf: {
-    productList: '#template-products-widget',
+    homeWidget: '#template-home-widget',
+    contactWidget: '#template-contact-widget',
+    productWidget: '#template-products-widget',
   },
   containerOf: {
-    home: '.home-wrapper',
+    pages: '#pages',
+    //home: '.home-wrapper',
+    contact: '.contact-wrapper',
+    products: '.products-wrapper',  
   },
   nav: {
     links: '.main-nav a',
   },
+  home: {
+    productsListHome: '.products-list-home'
+  },
+  products: {
+    productsList: '.products-list'
+  }
 };
-  
-export const article = {
-  about: '#article-about',
-  products: '#article-product',
-  contact: '#article-contact',
-};
-  
-export const titles = {
-  home: 'products',
-  products: 'products',
-  contact: 'contact us'
-};
-  
+
 export const classNames = {
   nav: {
     active: 'active',
@@ -39,5 +38,6 @@ export const settings = {
 };
   
 export const templates = {
-  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
+  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
+  productWidget: Handlebars.compile(document.querySelector(select.templateOf.productWidget).innerHTML),
 };

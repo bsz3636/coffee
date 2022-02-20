@@ -14,11 +14,11 @@ class Product {
   renderInMenu() {
     const thisProduct = this;
 
-    const generatedHTML = templates.menuProduct(thisProduct.data);
+    const generatedHTML = templates.productWidget(thisProduct.data);
 
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
 
-    const menuContainerHome = document.querySelector(select.containerOf.home);
+    const menuContainerHome = document.querySelector(select.products.productsList);
 
     menuContainerHome.append(thisProduct.element);
 
