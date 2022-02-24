@@ -18,13 +18,13 @@
   z-index: 5;
 }
   
-h1 {
+.header-text h1 {
   font-size: 30px;
   word-spacing: 5px;
   letter-spacing: 7px;
 }
   
-p {
+.header-text p {
   letter-spacing: 3px;
   margin-top: -20px;
 }
@@ -50,24 +50,33 @@ p {
   }
 }
 
+.hamburger {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  color: $color-light;
+  display: block;
+  margin-left: auto;
+  padding: 0 30px;
+  line-height: 60px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
 .banner {
   position: absolute;
   top: 35%;
   left: 15%;
   right: 15%;
-  
-  
 }
 
 .banner-text {
   font-size: 85px;
-  text-align: right;
+  text-align: center;
   margin: 0;
-
-}
-
-.banner-text:first-child {
-  text-align: left;
 }
 
 .baner-line {

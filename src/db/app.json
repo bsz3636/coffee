@@ -10,7 +10,10 @@
         "<img src=\"../images/coffee-1.png\">"
       ],
       "most-popular": [
-      ]
+        "<img src=\"../images/unnamed.png\">"
+      ],
+      "old-price": "36$",
+      "new-price": "25$"
     },
     {
       "id": "02.",
@@ -20,7 +23,9 @@
       "intensity": "9/10",
       "image": [
         "<img src=\"/images/coffee-2.png\">"
-      ]
+      ],
+      "old-price": "34$",
+      "new-price": "24$"
     },
     {
       "id": "03.",
@@ -30,8 +35,9 @@
       "intensity": "7/10",
       "image": [
         "<img src=\"/images/coffee-3.png\">"
-      ]
+      ],
+      "old-price": "37$",
+      "new-price": "23$"
     }
   ]
-} 
-   
+}

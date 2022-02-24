@@ -92,6 +92,43 @@ export const app = {
     }
   },
 
+  initHamburger: function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-ul');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+  },
+
+  banerHeader: function () {
+    let baner = ['Home of Original Tastes', 'Real Venezuela, Real Coffee', 'Taste Real Venezuela'];
+    let randomHeader = Math.floor(Math.random() * baner.length);
+    document.getElementById('randomHeader').innerHTML = baner[randomHeader];
+    //document.getElementById('randomHeader').style.textAlign = 'center';
+  },
+
+  carousel () {
+        
+    const elem = document.querySelector('.main-carousel');
+    // eslint-disable-next-line no-undef
+    new Flickity( elem, {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      prevNextButtons: false,
+      wrapAround: true,
+      autoPlay: 5000,
+      pageDots: false
+    });
+  },
+
   init: function () {
     const thisApp = this;
     
@@ -100,8 +137,10 @@ export const app = {
     
     thisApp.initMenu();
     //thisApp.initHome();
+    thisApp.initHamburger();
+    thisApp.banerHeader();
+    thisApp.carousel ();
   
   },
 };
 app.init();
-

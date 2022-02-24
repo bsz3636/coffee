@@ -1,0 +1,788 @@
+@media (min-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px){
+  
+  //header
+  .hamburger {
+    display: none;
+  }
+
+  .nav-ul {
+    right: 10%;
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  .banner {
+    top: 40%;
+  }
+
+  .banner-text {
+    font-size: 60px;
+  }
+
+  .baner-line {
+    margin-top: 3%;
+  }
+
+  .box-btn h2 {
+    font-size: 23px;
+  }
+    
+  .box-btn i {
+    font-size: 28px;
+  }
+
+  //products
+  .title-products {
+    width: 45%;
+    height: 60px; 
+  }
+
+  .container {
+    margin: 50px auto ;
+    width: 100%;
+  }
+
+  .page {
+    width: 80%;
+  }
+
+  .products-widget {
+    [class^="skill-"] 
+    .skill-right .skill-description {
+      padding: 5% 55% 5% 10%;
+    }
+
+    .title {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 5%;
+    }
+
+    .border-line {
+      margin-top: 3%;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .specification {
+      padding-top: 8%;
+      font-size: 20px;
+    }
+
+    .most-popular {
+      left: 55%;
+      top: 30%;
+      transform: scale(1.3);
+    }
+
+    .triangle {
+      border-width: 0 200px 140px 0;
+    } 
+
+    .price-box {
+      top: -2%;
+      left: 87%;
+    }
+
+    .old {
+      font-size: 19px;
+    }
+
+    .new {
+      font-size: 38px;
+    }
+  }
+
+  .products-widget:nth-child(even){
+    .skill-description {
+      padding: 5% 0 5% 55%;
+    }
+
+    .price-box {
+      top: -2%;
+      left: 2%;
+    }
+
+    .triangle {
+      border-width: 140px 200px 0 0;
+    }
+
+    .old {
+      font-size: 19px;
+    }
+
+    .new {
+      font-size: 38px;
+    }
+  }
+
+  //about
+  .title-about {
+    width: 30%;
+    border-bottom: 5px solid $color-gold;
+  }
+
+  .carousel-img {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  .carousel-cell{
+    margin-top: 0;
+  }
+
+  .carousel-img {
+    left: 10%;
+  }
+
+  .text-box {
+    padding: 22% 5% 15% 43%;
+  }
+
+  .text-box h3 {
+    font-size: 34px;
+  }
+
+  .text-box p {
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  //footer
+  footer {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px){
+  
+  //header
+  .header-text h1 {
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: -5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-ul {
+    right: 10%;
+
+    a{
+      font-size: 16px;
+    }
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  h2 {
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+
+  .banner {
+    top: 40%;
+  }
+
+  .banner-text {
+    font-size: 45px;
+  }
+
+  .baner-line {
+    margin-top: 3%;
+  }
+
+  //products
+  .title-products {
+    height: 45px; 
+  }
+
+  .container {
+    margin: 40px auto ;
+    width: 100%;
+  }
+
+  .page {
+    width: 80%;
+  }
+
+  .products-widget {
+    [class^="skill-"] 
+    .skill-right .skill-description {
+      padding: 5% 55% 5% 10%;
+    }
+
+    .title {
+      font-size: 27px;
+      margin-top: 0;
+    }
+
+    .border-line {
+      margin-top: 3%;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 20px;
+    }
+
+    .specification {
+      padding-top: 8%;
+      font-size: 17px;
+    }
+
+    .most-popular {
+      left: 50%;
+      top: 20%;
+      transform: scale(1.2);
+    }
+
+    .triangle {
+      border-width: 0 180px 130px 0;
+    } 
+
+    .price-box {
+      top: -2%;
+      left: 85%;
+    }
+
+    .old {
+      font-size: 17px;
+    }
+
+    .new {
+      font-size: 34px;
+    }
+  }
+
+  .products-widget:nth-child(even){
+    .skill-description {
+      padding: 5% 0 5% 55%;
+    }
+
+    .price-box {
+      top: -2%;
+      left: 1%;
+    }
+
+    .triangle {
+      border-width: 130px 180px 0 0;
+    }
+
+    .old {
+      font-size: 17px;
+    }
+
+    .new {
+      font-size: 34px;
+    }
+  }
+
+  //about
+  .title-about {
+    width: 30%;
+    border-bottom: 5px solid $color-gold;
+  }
+
+  .carousel-img {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-box {
+    padding: 22% 5% 15% 43%;
+  }
+
+  .text-box h3 {
+    font-size: 30px;
+  }
+
+  .text-box p {
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  //footer
+  footer {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  
+  //header
+  .header-text h1 {
+    font-size: 26px;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: -5px;
+  }
+
+  .nav-ul {
+    position: fixed;
+    right: -90%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-ul.active {
+    right: -37%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    top: 1%;
+    right: 5%;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .banner {
+    top: 50%;
+  }
+
+  .banner-text {
+    font-size: 35px;
+  }
+
+  .baner-line {
+    border-bottom: 3px solid $color-gold;
+  }
+
+  .box-btn {
+    bottom: 1%;
+  }
+
+  .box-btn h2 {
+    transform: translate(-50%,0%);
+    font-size: 15px;
+  }
+
+  .box-btn i {
+    font-size: 17px;
+  }
+
+  //products
+  .title-products {
+    width: 30%;
+    border-bottom: 3px solid $color-gold;
+    height: 30px; 
+  }
+
+  .container {
+    margin: 30px auto ;
+    width: 98%;
+  }
+
+  .page {
+    width: 100%;
+  }
+
+  .products-widget {
+    [class^="skill-"] 
+    .skill-right .skill-description {
+      padding: 5% 55% 5% 10%;
+    }
+
+    .title {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    .border-line {
+      margin-top: 2%;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .specification {
+      padding-top: 8%;
+      font-size: 15px;
+    }
+
+    .most-popular {
+      left: 50%;
+      top: 10%;
+      transform: scale(1);
+    }
+
+    .triangle {
+      border-width: 0 170px 120px 0;
+    }
+
+    .price-box {
+      left: 85%;
+      top: -2%;
+    }
+
+    .old {
+      font-size: 17px;
+    }
+
+    .new {
+      font-size: 34px;
+    }
+  }
+
+  .products-widget:nth-child(even){
+    .skill-description {
+      padding: 5% 0% 5% 55%;
+    }
+
+    .price-box {
+      left: 1%;
+      top: -2%;
+    }
+
+    .triangle {
+      border-width: 120px 170px 0 0;
+    }
+
+    .old {
+      font-size: 17px;
+    }
+
+    .new {
+      font-size: 34px;
+    }
+  }
+
+  //about
+  .title-about {
+    margin-top: 3%;
+    border-bottom: 3px solid $color-gold;
+    width: 30%;
+  }
+
+  .carousel-cell{
+    margin-top: -30%;
+  }
+
+  .carousel-img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-box {
+    padding: 120% 10% 15% 10%;
+  }
+
+  .text-box h3 {
+    margin-top: -30%;
+    font-size: 25px;
+  }
+
+  .text-box p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  //contact
+  .title-contact {
+    border-bottom: 3px solid $color-gold;
+    height: 45px; 
+  }
+
+  .form-row {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  input {
+    border: 2px solid $color-dark;
+    width: 85%;
+    height: 30px;
+  }
+
+  textarea {
+    border: 2px solid $color-dark;
+    width: 85%;
+  }
+
+  .submit-btn {
+    letter-spacing: 2px;
+    border: none;
+    width: 55%;
+    height: 50px;
+    margin: 20px 0;
+  }
+
+  //footer
+  footer {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 575.99px) {
+  h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  
+  //header
+  .header-text h1 {
+    font-size: 17px;
+    word-spacing: 0px;
+    letter-spacing: 2px;
+  }
+
+  .header-text p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: -5px;
+  }
+
+  .nav-ul {
+    position: fixed;
+    right: -100%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-ul.active {
+    right: -32%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    top: 1%;
+    right: 7%;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .banner {
+    top: 50%;
+  }
+
+  .banner-text {
+    font-size: 23px;
+  }
+
+  .baner-line {
+    border-bottom: 3px solid $color-gold;
+  }
+
+  .box-btn {
+    bottom: 1%;
+  }
+
+  .box-btn h2 {
+    transform: translate(-50%,0%);
+    font-size: 13px;
+  }
+
+  .box-btn i {
+    font-size: 15px;
+  }
+
+  //products
+  .title-products {
+    width: 35%;
+    border-bottom: 3px solid $color-gold;
+    height: 25px; 
+  }
+
+  .container {
+    margin: 30px auto ;
+    width: 98%;
+  }
+
+  .page {
+    width: 100%;
+  }
+
+  .products-widget {
+    [class^="skill-"] 
+    .skill-right .skill-description {
+      padding: 5% 55% 5% 10%;
+    }
+
+    .title {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .border-line {
+      margin-top: 2%;
+    }
+
+    .description {
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    .specification {
+      padding-top: 10%;
+      font-size: 13px;
+    }
+
+    .most-popular {
+      left: 50%;
+      top: 10%;
+      transform: scale(0.9);
+    }
+
+    .triangle {
+      border-width: 0 140px 100px 0;
+    } 
+
+    .price-box {
+      top: -3%;
+      left: 85%;
+    }
+
+    .old {
+      font-size: 15px;
+    }
+
+    .new {
+      font-size: 30px;
+    }
+  }
+
+  .products-widget:nth-child(even){
+    .skill-description {
+      padding: 5% 0 5% 55%;
+    }
+
+    .price-box {
+      top: -3%;
+      left: 1%;
+    }
+
+    .triangle {
+      border-width: 100px 140px 0 0;
+    }
+
+    .old {
+      font-size: 15px;
+    }
+
+    .new {
+      font-size: 30px;
+    }
+  }
+  //about
+  .title-about {
+    margin-top: 3%;
+    border-bottom: 3px solid $color-gold;
+  }
+
+  .carousel-cell{
+    margin-top: -20%;
+  }
+
+  .carousel-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-box {
+    padding: 120% 10% 15% 15%;
+  }
+
+  .text-box h3 {
+    margin-top: -20%;
+    margin-bottom: 5%;
+    font-size: 18px;
+  }
+
+  .text-box p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  //contact
+  .title-contact {
+    border-bottom: 3px solid $color-gold;
+    height: 45px; 
+  }
+
+  .form-row {
+    font-size: 16px;
+    letter-spacing: 2px;
+  } 
+
+  input {
+    border: 2px solid $color-dark;
+    width: 85%;
+    height: 30px;
+  }
+
+  textarea {
+    border: 2px solid $color-dark;
+    width: 85%;
+  }
+
+  .submit-btn {
+    letter-spacing: 2px;
+    border: none;
+    width: 55%;
+    height: 50px;
+    margin: 20px 0;
+  }
+
+  //footer
+  footer {
+    margin-top: 20px;
+  }
+}

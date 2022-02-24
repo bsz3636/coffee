@@ -16,8 +16,7 @@
 
 .products-widget {
   [class^="skill-"] {
-    position: relative;
-       
+    position: relative;  
   }
 
   .skill-image {
@@ -32,6 +31,9 @@
   }
 
   .skill-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
   }
@@ -43,6 +45,41 @@
   .skill-right .skill-description {
     padding: 36px 55% 36px 2%;
     text-align: left;
+  }
+
+  .price-box {
+    position: absolute;
+    left: 88%;
+    z-index: 100;
+  }
+
+  .triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 230px 150px 0;
+    border-color: transparent $color-gold transparent transparent;
+    z-index: 90;
+  } 
+
+  .price {
+    color: $color-light;
+    font-weight: $font-weight-bold;
+    z-index: 10;
+  }
+
+  .old {
+    font-size: 18px;
+    text-decoration: line-through;
+  }
+
+  .new {
+    margin: -30%;
+    font-size: 36px;
+    padding-left: 70%;
   }
 
   .title {
@@ -69,6 +106,17 @@
       color: $color-gold;
     }
   }
+
+  .row {
+    position: relative;
+  }
+
+  .most-popular {
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: scale(1.4);
+  }
 }
 
 .products-widget:nth-child(even){
@@ -79,5 +127,34 @@
 
   .skill-right .skill-image {
     left: 0;
+  }
+ 
+  .price-box {
+    position: absolute;
+    left: 3%;
+    z-index: 100;
+  }
+
+  .triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 230px 0 0;
+    border-color: $color-gold transparent transparent transparent;
+    z-index: 90; 
+  }
+  
+  .old {
+    font-size: 18px;
+    text-decoration: line-through;
+  }
+
+  .new {
+    margin: -30%;
+    font-size: 36px;
+    //padding-left: 70%;
   }
 }

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EL TIGRE - we are the seller of the best coffee. Our coffee is the favorite coffee of millions of people.">
 	<title> "EL TIGRE" Coffee Shop</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +14,31 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+
   <header>
 		<div class="header-img">
-			<img class="image" src="../../images/background.png" alt="sack of coffee beans">
+			<img class="image img-fluid" src="../../images/background.png" alt="sack of coffee beans">
 			<div class="header-text">
 				<h1>el tigre</h1>
 				<p>venezuela coffe beans</p>
 			</div>
 			<ul class="nav-ul main-nav" id="nav-ul">
-				<li><a href="#home">home</a></li>
-				<li><a href="#products">products</a></li>
-				<li><a href="#contact">contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#products">products</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
 			</ul>
+      <button aria-label="menu" class="hamburger" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <div class="banner">
-        <h2 class="banner-text one">Home of</h2><h2 class="banner-text two">Original Tastes</h2>
+        <h2 class="banner-text" id="randomHeader">&#10240;</h2>
+        <!--<h2 class="banner-text one">Home of</h2><h2 class="banner-text two">Original Tastes</h2>-->
         <div class="baner-line"></div>
       </div>
 
 			<div class="box-btn">
         <h2>discover</h2>
-        <!--<a href="#products"><i class="far fa-arrow-alt-circle-down"></i></a>-->
+        <a aria-label="down" href="#pages"><i class="far fa-arrow-alt-circle-down"></i></a>
 			</div>
 		</div>
 	</header>
@@ -41,7 +46,7 @@
   <div id="pages">
     <section id="home">
 
-      <div class="products-wrapper page home-wrapper">
+      <div class="products-wrapper page home-wrapper" id="home-product">
         <div class="title-products">
           <h2>products</h2>
         </div>
@@ -50,8 +55,14 @@
         <script id="template-home-widget" type="text/x-handlebars-template">
           <div class="products-widget container">
             <div class="skill-right">
-              <div class="skill-image">
+              
+              <div class="skill-image img-fluid">
                 {{{ image }}}
+                <div class="triangle"></div>
+              </div>
+              <div class="price-box">
+                <p class="price old">{{{ old-price }}}</p>
+                <p class="price new">{{{ new-price }}}</p>
               </div>
               <div class="skill-description">
                 <h3 class="title">{{{ id }}} {{{ title }}}</h3>
@@ -64,7 +75,7 @@
                     <p>roasting: <span>{{{ roasting }}}</span></p>
                     <p>intensity: <span>{{{ intensity }}}</span></p>
                   </div>
-                  <div class="col-sm-5 badge">
+                  <div class="col-sm-5 most-popular">
                     {{{ most-popular }}}
                   </div>
                 </div>
@@ -78,10 +89,9 @@
         <div class="home-widget">
           <div class="bgd"></div>
           <div class="title-about"><h2>about us</h2></div>
-          <div class="carousel" data-flickity='{ "autoPlay": "3500", "contain": true, "prevNextButtons": false, "wrapAround": true, "cellAlign": "left", "pageDots": false }'>
-            
+          <div class="carousel main-carousel">
             <div class="carousel-cell">
-              <div class="carousel-img"><img src="images/3.png" alt="Elizabeth Doherty"></div>
+              <div class="carousel-img"><img  src="images/3.png" alt="Elizabeth Doherty"></div>
               <div class="text-box">
                 <h3 class= "name-carousel">Elizabeth Doherty</h3>
 					      <p class="description">Experienced barista from Bahamas. She says that Venezuela has opened her eyes on coffee. "It`s not about the taste", she says. "It`s all about the feelings" </p>
@@ -89,7 +99,7 @@
             </div>
 
             <div class="carousel-cell">
-              <div class="carousel-img"><img src="images/2.png" alt="Max Selfish"></div>
+              <div class="carousel-img"><img class="img-fluid" src="images/2.png" alt="Max Selfish"></div>
               <div class="text-box">
                 <h3 class= "name-carousel">Max Selfish</h3>
 					      <p class="description">Max is the austrian barista with years of experience from the hotels across the whole Europe. "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!", he says.</p>
@@ -97,7 +107,7 @@
             </div>
 
             <div class="carousel-cell">
-              <div class="carousel-img"><img src="images/1.png" alt="Ping Nihao"></div>
+              <div class="carousel-img"><img class="img-fluid" src="images/1.png" alt="Ping Nihao"></div>
               <div class="text-box">
                 <h3 class= "name-carousel">Ping Nihao</h3>
 					      <p class="description">Ping is the youngest in the team. He doesn`t like calling coffee a mysterious act. He says, a good coffee is like a mathematical formula. Once you figured it out, every coffee you make is a masterpiece. </p>
@@ -111,7 +121,7 @@
 
     <section id="products">
 
-      <div class="products-wrapper page products-wrapper">
+      <div class="products-wrapper page">
         <div class="title-products">
           <h2>products</h2>
         </div>
@@ -152,8 +162,13 @@
   <script id="template-products-widget" type="text/x-handlebars-template">
     <div class="products-widget container">
       <div class="skill-right">
+        <div class="triangle"></div>
         <div class="skill-image">
           {{{ image }}}
+        </div>
+        <div class="price-box">
+          <p class="price old">{{{ old-price }}}</p>
+          <p class="price new">{{{ new-price }}}</p>
         </div>
         <div class="skill-description">
           <h3 class="title">{{{ id }}} {{{ title }}}</h3>
@@ -166,7 +181,7 @@
               <p>roasting: <span>{{{ roasting }}}</span></p>
               <p>intensity: <span>{{{ intensity }}}</span></p>
             </div>
-            <div class="col-sm-5 badge">
+            <div class="col-sm-5 most-popular">
               {{{ most-popular }}}
             </div>
           </div>

@@ -10,6 +10,7 @@ class Home {
     thisHome.data = data;
 
     thisHome.render();
+  
   }
 
   render () {
