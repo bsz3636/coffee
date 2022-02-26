@@ -117,15 +117,18 @@ export const app = {
   carousel () {
         
     const elem = document.querySelector('.main-carousel');
-    // eslint-disable-next-line no-undef
-    new Flickity( elem, {
-      // options
-      cellAlign: 'left',
-      contain: true,
-      prevNextButtons: false,
-      wrapAround: true,
-      autoPlay: 5000,
-      pageDots: false
+    window.addEventListener( 'load', function() {
+      // eslint-disable-next-line no-undef
+      new Flickity( elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        prevNextButtons: false,
+        wrapAround: true,
+        autoPlay: 5000,
+        pageDots: false,
+        pauseAutoPlayOnHover: false
+      });
     });
   },
 
